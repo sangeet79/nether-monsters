@@ -330,7 +330,7 @@ mobs:register_mob("nether_mobs:dragon", {
 	fall_speed = -8,
 	fall_damage = 20,
 	water_damage = 5,
-	lava_damage = 1,
+	lava_damage = 0,
 	light_damage = 1,
         suffocation = false,
         floats = 1,
