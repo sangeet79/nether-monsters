@@ -38,7 +38,6 @@ mobs:register_mob("nether_mobs:netherman", {
 	passive = false,
 	group_attack = true,
 	attack_type = "dogfight",
-	pathfinding = false,
 	reach = 2,
 	damage = 1,
 	hp_min = 10,
@@ -81,7 +80,7 @@ mobs:register_mob("nether_mobs:netherman", {
 		punch_start = 74,
 		punch_end = 105,
 	},
-	replace_rate = 1/1000,
+	replace_rate = 3,
 	replace_what = {
 			"default:sand",
 			"default:silver_sand",
