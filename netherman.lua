@@ -65,7 +65,7 @@ mobs:register_mob("nether_mobs:netherman", {
 		{name = "nether:brick", chance = 5, min = 1, max = 2},
 	},
 	water_damage = 10,
-	lava_damage = 2,
+	lava_damage = 0,
 	light_damage = 1,
 	fear_height = 4,
 	animation = {
@@ -108,8 +108,8 @@ mobs:spawn({
 	max_light = 15,
 	name = "nether_mobs:netherman",
 	nodes = {"nether:sand", "nether:rack"},
-	interval = 2,
-	chance = 2,
+	interval = 30,
+	chance = 10000,
 	day_toggle = nil,
 	active_object_count = 2,
 	on_spawn = function(self, pos)
