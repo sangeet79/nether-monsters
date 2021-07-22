@@ -447,7 +447,7 @@ mobs:register_mob("nether_mobs:tamed_dragon", {
 	drops = {
 		{name = "mobs:meat_raw", chance = 1, min = 5, max = 8},
 		{name = "nether_mobs:dragon_scale", chance = 1, min = 8, max = 15},
-		{name = "nether_mobs:dragon_egg", chance = 1, min = 1, max = 2},
+		-- {name = "nether_mobs:dragon_egg", chance = 1, min = 1, max = 2},
 		{name = "nether:sand", chance = 1, min = 3, max = 5},
 		{name = "nether:rack", chance = 3, min = 2, max = 4},
 		{name = "nether:brick", chance = 5, min = 1, max = 2},
@@ -462,7 +462,7 @@ mobs:register_mob("nether_mobs:tamed_dragon", {
 		{"mobs_nether_dragon_child.png"},
 	},
 	mesh = "mobs_nether_dragon.b3d",
-	replace_rate = 1/1000,
+	replace_rate = 3,
 	replace_what = {
 			"default:sand",
 			"default:silver_sand",
