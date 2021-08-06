@@ -469,7 +469,7 @@ mobs:register_mob("nether_mobs:tamed_dragon", {
 		{"mobs_nether_dragon_child.png"},
 	},
 	mesh = "mobs_nether_dragon.b3d",
-	replace_rate = 3,
+	replace_rate = 0,
 	replace_what = {
 			"default:sand",
 			"default:silver_sand",
@@ -504,6 +504,7 @@ mobs:register_mob("nether_mobs:tamed_dragon", {
 			self.terrain_type = 2
 			self.driver_attach_at = {x = 3, y = y_off, z = -2}
 			self.driver_eye_offset = {x = 3, y = 3, z = 0}
+			self.driver_scale = {x = 0.8, y = 0.8}
 		end
 
 		-- if driver present allow control of dragon
@@ -571,7 +572,7 @@ self.saddle = true
 		end
 
 		-- used to capture dragon with magic lasso
-		mobs:capture_mob(self, clicker, 0, 0, 80, false, nil)
+		mobs:capture_mob(self, clicker, nil, nil, 80, false, nil) then return
 	end
 
 })
