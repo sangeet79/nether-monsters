@@ -572,7 +572,7 @@ self.saddle = true
 		end
 
 		-- used to capture dragon with magic lasso
-		if mobs:capture_mob(self, clicker, nil, nil, 80, false, nil) then return
+		if mobs:capture_mob(self, clicker, nil, nil, 80, false, nil) then return end
 	end
 
 })
